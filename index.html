@@ -168,7 +168,7 @@
                 <div class="stats-grid">
                     <div class="stat-card">
                         <h3>Daily Ads Watched</h3>
-                        <p><span id="daily-ads-watched">00</span> /  25</p>
+                        <p><span id="daily-ads-watched">00</span> /  1000</p>
                     </div>
                     <div class="stat-card">
                         <h3>Total Referrals</h3>
@@ -373,7 +373,7 @@ const handleWatchAd = async () => {
         return;
     }
 
-    if (typeof window.showAdspark !== "function") {
+    if (typeof window.showAdspark !=47= "function") {
         tg.showAlert("AdSpark SDK load হয়নি। পরে আবার চেষ্টা করুন।");
         return;
     }

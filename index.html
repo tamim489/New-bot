@@ -373,7 +373,7 @@ const handleWatchAd = async () => {
         return;
     }
 
-    if (typeof window.showAdspark !=47= "function") {
+    if (typeof window.showAdspark !== "function") {
         tg.showAlert("AdSpark SDK load হয়নি। পরে আবার চেষ্টা করুন।");
         return;
     }
@@ -405,7 +405,7 @@ const handleWatchAd = async () => {
 };
 
                 loadingModal.style.display = 'flex';
-                show_9693869().then(() => {
+                
                     userState.points += POINTS_PER_AD;
                     userState.dailyAdWatchCount++;
                     saveState();
